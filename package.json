@@ -1,0 +1,10 @@
+{
+	"name" : "node_redis",
+	"version" : "0.0.1",
+	"private" : "true",
+	"dependencies" : {
+		"newrelic" : "1.11.5",
+		"express" : "~4.0.0",
+		"node-redis" : "*"
+	}
+}
