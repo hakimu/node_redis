@@ -23,5 +23,13 @@ app.get('/redis', function(req,res){
 	client.quit();
 });
 
+app.get('/test', function(req,res){
+	var foo = {"day":"monday"}
+	client.set(foo);
+	client.get(foo)
+	res.send(foo.day)
+	client.end()
+});
+
 app.listen(8888);
 console.log('Let the games begin...on port 8888');
